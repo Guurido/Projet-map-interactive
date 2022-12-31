@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="map.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Commerces en IDF</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="map.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin="" defer></script>
+    <script src="fonctions.js" defer></script>
+    <script src="script_1.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <img class="homeimg" src="img/25694.png" alt="home-img" />
+      </a>
+    </header>
+    <main>
+      <h1 class="title">
+        TROUVER VOTRE COMMERCE
+      </h1>
+      <section class="main-container-map-page">
+        <div class="Left-section">
+          <form class="search-bloc-container" action="">
+            <input type="text" placeholder="Rechercher" />
+            <span>🔍</span>
+          </form>
+          <p class="disclaimer">Bientôt disponible</p>
+          <div class="bloc-filtre-container">
+            <form class="form-filtre">
+              <div class="input-filtre">
+                <input type="text" placeholder="Filtre" />
+              </div>
+              <div class="input-filtre">
+                <input type="text" placeholder="Filtre" />
+              </div>
+              <button type="submit">Rechercher</button>
+            </form>
+          </div>
+        </div>
+        <div id="map">
+          <script
+            async
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA88qhrDpOar4U0oN1HhhfQYI0QcogQ1wI&callback=iMap"
+          ></script>
+        </div>
+        <section class="map-container"></section>
+      </section>
+      <footer>
+        <div class="footer">
+          <a
+            class="lien"
+            href="https://chatelet-yanis.alwaysdata.net/"
+            target="_blank"
+            >CHATELET Yanis </a
+          ><span>|</span>
+          <a class="lien" href="https://a-samad.alwaysdata.net/" target="_blank"
+            >ABDUL Samad </a
+          ><span>|</span>
+          <a class="lien" href="https://aloukal.alwaysdata.net/" target="_blank"
+            >LOUKAL Adel </a
+          ><span>|</span>
+          <a class="lien" href="https://etmidi.alwaysdata.net" target="_blank"
+            >ETMIDI Adnane </a
+          ><span>|</span>
+          <a
+            class="lien"
+            href="https://kevinlabatte.fr/"
+            target="_blank"
+            >LABATTE Kevin
+          </a>
+          <p class="copyright">Copyright © 2022 IUT de Cergy Pontoise</p>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
